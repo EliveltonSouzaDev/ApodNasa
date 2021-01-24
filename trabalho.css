@@ -118,7 +118,7 @@ h3 {
     }
 
     #logo {
-        margin: 0 0 0 5%;
+        margin: 0 0 0 10%;
         width: 150px;
     }
 
@@ -128,16 +128,17 @@ h3 {
     }
 
     #arquived{
-        margin: 0 auto;
+        margin: 0 0 0 10%;
         width: 80%;
     }
 
     input {
-        margin: 0 auto;
+        margin: 0 0 0 10%;
         width: 80%;
     }
 
     header {
+        overflow: hidden;
         margin: 0 auto;
         max-width: 100%;
         background: url(https://conhecimentocientifico.r7.com/wp-content/uploads/2020/03/estrelas-o-que-sao-caracteristicas-tipos-as-diferencas-e-curiosidades.jpg);
@@ -145,10 +146,10 @@ h3 {
     }
 
     button{
-        width: 80%;
+        width: 100px;
         height: 80%;
         padding:8px;
-        margin: 15px 15px 10px 5px;
+        margin: 15px 15px 10px 1px;
     }
 
     #grid {
@@ -184,5 +185,9 @@ h3 {
 
     h3{
         display: none
+    }
+
+    span{
+        display: none;
     }
 }

@@ -5,51 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="trabalho.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.min.js" integrity="sha512-F+u8eWHrfY8Xw9BLzZ8rG/0wIvs0y+JyRJrXjp3VjtFPylAEEGwKbua5Ip/oiVhaTDaDs4eU2Xtsxjs/9ag2bQ==" crossorigin="anonymous"></script>
     <title>Astronomy Picture of the Day
     </title>
 
 </head>
 
 <body>
-<div class="container" class="stars">
-    <header><img id="logo"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/200px-NASA_logo.svg.png">
+    <div class="container" class="stars">
+        <header><img id="logo"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/200px-NASA_logo.svg.png">
 
-        <div id="inputs">
+            <div id="inputs">
 
-            <button id="previous"> ◀ <span>Previous Day</span></button>
-            <button id="next"><span>Next Day</span> ▶ </button>
-        </div>
+                <button id="previous"> ◀ <span>Previous Day</span></button>
+                <button id="next"><span>Next Day</span> ▶ </button>
+            </div>
 
             <div id="arq">
                 <button id="arquived">Find your day </button>
                 <input type="date" id="data"></input>
+                <p id="data"></p>
             </div>
 
-    </header>
+        </header>
 
 
-    <h1>Astronomy Picture of the Day</h1>
-
-    <h3>
-        <a href="https://apod.nasa.gov/apod/archivepix.html">Discover the cosmos!</a>
-        Each day a different image or photograph of our fascinating universe is
-        featured, along with a brief explanation written by a professional astronomer.
-    </h3>
+        <h1>Astronomy Picture of the Day</h1>
 
 
+        <h3>
+            <a href="https://apod.nasa.gov/apod/archivepix.html">Discover the cosmos!</a>
+            Each day a different image or photograph of our fascinating universe is
+            featured, along with a brief explanation written by a professional astronomer.
+        </h3>
 
-    <div id="grid" >
 
-        <img></img>
 
-        <div id="txt">
-        <p></p>
+        <div id="grid">
+
+            <p id="title"></p>
+
+            <img id="img"></img>
+
+            <p id="p"></p>
+
         </div>
     </div>
-</div>
+    </div>
+
+    <footer>
+        <div id="footer">&copy; Elivelton Souza</div>
+    </footer>
 </body>
 
 <script src="trabalho.js"></script>
+
+
 
 </html>

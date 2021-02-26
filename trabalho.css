@@ -144,6 +144,10 @@ footer{
     margin-top: 10%;
 }
 
+#date-txt{
+    color:#FC3B1B;
+    text-align:center;
+}
 
 
 @media only screen and (max-width: 600px) {

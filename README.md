@@ -4,7 +4,7 @@ Pagina Web onde busca dados da API da NASA (APOD); e é possível buscar a foto 
 
 ![](https://github.com/EliveltonSouzaDev/ApodNasa/blob/main/logoapod.png)
 
-![](https://gph.is/g/4oXvko1)
+![](https://media.giphy.com/media/ngPhb5gGA1BVuR1jxA/giphy.gif)
 
 
 

@@ -12,3 +12,8 @@ As seguintes ferramentas foram usadas na construção do projeto até o presente
 - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+
+
+#### Autor:
+
+- [Elivelton Souza](https://github.com/EliveltonSouzaDev)

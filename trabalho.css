@@ -1,246 +1,300 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
-    background-color: lightgray;
-    font-family: open-sans, sans-serif;
+  background-color: #4a4a48;
+  font-family: montserrat, normal;
 }
 
 p {
-    overflow: hidden;
-    margin: 2px 10%;
-    font-size: large;
-    text-align: justify;
-    padding: 10px;
-    color: #073F94;
-    font-weight: bold;
-    grid-area: p;
+  overflow: hidden;
+  margin: 2px 10%;
+  font-size: 20px;
+  text-align: justify;
+  padding: 10px;
+  color: #fafafa;
+  font-weight: bold;
+  grid-area: p;
 }
 
 header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: black;
-    width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #0d0d12;
+  background-image: linear-gradient(180deg, #0d0d12 0%, #312e31 100%);
+  width: 100%;
 }
 
-#arq {
-    display: flex;
-    flex-direction: column;
-    margin: 0 15% 0 0;
+#calendar {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15% 0 0;
 }
 
 #logo {
-    margin-left: 5%;
+  margin: 1em 0 1em 5%;
+  width: 140px;
+  height: 10%;
+  border-radius:50%;
+
 }
+
+#logo-2 {
+    margin-left: 15%;
+    opacity: 0.5;
+    transition: all 0.5s;
+
+  }
+
+  
+#logo-2:hover {
+    opacity: 1;
+  }
+
+  
+#logo-3 {
+    width: 160px;
+    height: 100%;
+    border-radius:50%;
+    opacity: 0.5;
+    transition: all 0.8s;
+
+  }
+
+  
+#logo-3:hover {
+    opacity: 1;
+  }
+
+  .row{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+
 
 #inputs {
-    display: flex;
-    justify-content: left;
-    padding: 10px;
-    width: 100%;
-    margin: 0 10% 0 10%;
+  display: flex;
+  justify-content: left;
+  padding: 10px;
+  width: 100%;
+  margin: 0 10% 0 10%;
 }
 
-#arquived {
-    color: white;
-    background-color: #073F94;
-    padding: 8px;
-    border-radius: 5px;
-    margin: auto 0% auto 55%;
-    font-weight: bold;
-    width: 100%;
+#submit {
+  color: white;
+  background-color: #11213F;
+  padding: 8px;
+  border-radius: 5px;
+  margin: auto 0% auto 55%;
+  font-weight: bold;
+  width: 100%;
 }
 
-#arquived:hover {
-    color: #073F94;
-    background-color: #FC3B1B;
+#submit:hover {
+  color: #073f94;
+  background-color: #fc3b1b;
 }
 
 button {
-    color: white;
-    background-color: #FC3B1B;
-    padding: 12px;
-    border-radius: 5px;
-    margin: 3% 5% 0 1%;
-    font-weight: bold;
-    width: 35%;
-
+  color: white;
+  background-color: #fc3b1b;
+  padding: 12px;
+  border-radius: 5px;
+  margin: 3% 5% 0 1%;
+  font-weight: bold;
+  width: 35%;
 }
 
 button:hover {
-    color: #FC3B1B;
-    background-color: #073F94;
-    ;
+  color: #fc3b1b;
+  background-color: #11213F;
 }
 
 input {
-    width: 80%;
-    margin-left: 55%;
-    padding: 5%;
-    width: 100%;
-    border-radius: 5px;
-
-
+  width: 80%;
+  margin-left: 55%;
+  padding: 5%;
+  width: 100%;
+  border-radius: 5px;
 }
 
-h1,
+h1 {
+  text-align: center;
+  color: #fafafa;
+  font-weight: bold;
+  margin: 1em 2em;
+}
+
+h1::after {
+  content: "🚀";
+  opacity: 1;
+  margin-left: 5px;
+  display: inline-block;
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 h3 {
-    text-align: center;
-    padding: 20px;
-    color: #073F94;
-    font-weight: bold;
-    max-width: 80%;
-    margin: 0 auto;
-}
-
-h3{
-    font-size: 18px;
+  font-size: 18px;
 }
 
 #grid {
-    display: grid;
-    grid-template-areas: 
-    "img title"
-    "img p";
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+  align-items: center;}
+
+#title {
+  font-size: 25px;
+  color: #fafafa;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
 }
 
-#title{
-    grid-area:title;
-    font-size: 25px;
-    color: #073F94;
-    font-weight: bold;
-    font-style: italic;
-    justify-self: center;
-    text-decoration: underline;
-
-}
+.container {
+    display: flex;
+    margin:1em 0;
+    align-items:center;
+    justify-self: center;}
 
 #img {
-    margin: 0 10% 0 8%;
-    max-width: 100%;
-    padding: 10px;
-    border-radius: 4%;
-    grid-area: img;
+  margin: 0 auto;
+  width: 80%;
+  max-height: 70vh;
+  border-radius: 4%;
+  -webkit-box-shadow: 0px 3px 16px 7px #000000; 
+  box-shadow: 0px 3px 16px 7px #000000;
 }
 
-footer{
-    background:black;
-    position: relative;
-    color: #FC3B1B;
-    text-align:center;
-    height:20px;
-    width: 100%;
-    bottom:0;
-    font-weight: bold;
-    margin-top: 10%;
+footer {
+  background: black;
+  position: relative;
+  color: #fc3b1b;
+  text-align: center;
+  height: 20px;
+  width: 100%;
+  bottom: 0;
+  font-weight: bold;
+  margin-top: 10%;
 }
 
-#date-txt{
-    color:#FC3B1B;
-    text-align:center;
+#date-txt {
+  color: #fc3b1b;
+  text-align: center;
 }
 
+
+/*mobile*/
 
 @media only screen and (max-width: 600px) {
-    body {
-        background-color: lightgray;
-        overflow-x: hidden;
+  body {
+    overflow-x: hidden;
+  }
 
+  #logo {
+    display: none;
+  }
 
-    }
+  #logo-2{
+    width:38%;
+    margin: 0 0 0 5%;
+    padding: 0;
+  }
+  
+  #logo-3 {
+    width:30%;
+    margin: 0;
+    padding: 0;
+  }
 
-    #logo {
-        margin: 0 0 0 5%;
-        width: 25%;
-    }
+   
+  input {
+    margin: 0 0 0 50%;
+    width: 70%;
+    padding: 4px;
+  }
 
-    #arq {
-       display: flex;
-       margin: 0 10% 0 0 ;
-    }
+  header {
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 100%;
+    background: url(https://conhecimentocientifico.r7.com/wp-content/uploads/2020/03/estrelas-o-que-sao-caracteristicas-tipos-as-diferencas-e-curiosidades.jpg);
+    height: 180px;
+  }
 
-    #arquived{
-        margin: 0 0 0 50%;
-        width: 70%;
-        padding: 4px;
-    }
+  button {
+    width: 150%;
+    padding: 8px;
+    margin: 10% 2% 10% 50%;
+  }
 
-    input {
-        margin: 0 0 0 50%;
-        width: 70%;
-        padding: 4px;
+  #grid {
+    display: flex;
+    flex-direction: column;
+  }
+  #txt {
+    margin: 0 auto;
+    width: 90%;
+  }
+  #img {
+    margin: 0 auto;
+    width: 100%;
+  border:none;  }
 
-    }
+  #inputs {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 50% 5% 50% 1%;
+    padding: 1%;
+  }
 
-    header {
-        overflow: hidden;
-        margin: 0 auto;
-        max-width: 100%;
-        background: url(https://conhecimentocientifico.r7.com/wp-content/uploads/2020/03/estrelas-o-que-sao-caracteristicas-tipos-as-diferencas-e-curiosidades.jpg);
-        height: 180px;
-    }
+  #p {
+    margin: 0 auto;
+    height: 2%;
+    max-width: 94%;
+  }
 
-    button{
-        width: 150%;
-        padding:8px;
-        margin: 10% 2% 10% 50%;
-    }
+  #title {
+    font-size: 22px;
+    text-align: center;
+  }
 
-    #grid {
-        display: flex;
-        flex-direction: column;
-    }
-    #txt{ 
-      
-        margin: 0 auto;
-        width: 90%;
-    }
-    #img {
-        margin: 0 auto;
-        max-width: 95%;
-        padding: 10px;
-        
-    }
+  h1,
+  h3 {
+    margin: 1em auto;
+    background-color: li;
+  }
 
-    #inputs {
-        display:flex;
-        flex-direction: column;
-        width: 90%;
-        margin: 50% 5% 50% 1%;
-        padding:1%
-    }
+  #previous , #next{
+    width: 80%;
+    margin: 1em 1em
+  }
 
-    #p{
-        margin: 0 auto;
-        height: 2%;
-        max-width: 90%;
-    }
-    
-    #title {
-        font-size: 22px;
-    }
+  #submit, #data {
+    width: 90%;
+    margin: 0.2em auto
+  }
+  #calendar {
+    margin: 1em auto;
+  }
+  
 
-
-    h1,
-    h3 {
-        margin: 10px auto;
-        background-color:li
-    }
-
-    h3{
-        display: none
-    }
-
-    span{
-        display: none;
-    }
 }

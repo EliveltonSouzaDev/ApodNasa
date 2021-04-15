@@ -12,55 +12,57 @@
 </head>
 
 <body>
-    <div class="container" class="stars">
-        <header><img id="logo"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/200px-NASA_logo.svg.png">
+    <header>
+        <img id="logo" src="logoapod.png">
 
-            <div id="inputs">
+        <section id="inputs">
+            <button id="previous"> ◀ <span>Previous Day</span></button>
+            <button id="next"><span>Next Day</span> ▶ </button>
+        </section>
 
-                <button id="previous"> ◀ <span>Previous Day</span></button>
-                <button id="next"><span>Next Day</span> ▶ </button>
+        <section id="calendar">
+            <input id="submit" type="submit" value="Find your day "></input>
+            <input type="date" id="data"></input>
+            <p id="data"></p>
+        </section>
+
+    </header>
+
+    <h1>Astronomy Picture of the Day</h1>
+
+    <main class="container" class="stars">
+
+        <section id="grid">
+
+            <div class="container">
+                <h4 id="title"></h4>
+            </div>
+            <div class="container">
+                <img id="img"></img>
+
+            </div>
+            <div>
+                <p id="date-text"></p>
+                <p id="p"></p>
             </div>
 
-            <div id="arq">
-                <button id="arquived">Find your day </button>
-                <input type="date" id="data"></input>
-                <p id="data"></p>
+            <div class="row">
+                <img id="logo-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/200px-NASA_logo.svg.png">
+                <img id="logo-3" src="logoapod.png">">
             </div>
 
-        </header>
+        </section>
 
+    </main>
 
-        <h1>Astronomy Picture of the Day</h1>
-
-
-        <h3>
-            <a href="https://apod.nasa.gov/apod/archivepix.html">Discover the cosmos!</a>
-            Each day a different image or photograph of our fascinating universe is
-            featured, along with a brief explanation written by a professional astronomer.
-        </h3>
-
-            <p id="date-txt"></p>
-
-
-        <div id="grid">
-
-            <p id="title"></p>
-
-            <img id="img"></img>
-
-            <p id="p"></p>
-
-        </div>
-    </div>
-    </div>
 
     <footer>
         <div id="footer">&copy; Elivelton Souza</div>
     </footer>
+
 </body>
 
-<script src="trabalho.js"></script>
+<script src="index.js"></script>
 
 
 
